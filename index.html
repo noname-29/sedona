@@ -5,8 +5,105 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="main-header-logo">
+          <img src="img/index-logo.svg" width="67" height="56" alt="Логотип Седона">
+        </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="gallery.html">Фото и видео</li>
+            <li><a href="map.html">Карта штата</li>
+            <li><a href="hotel.html">Гостиница</li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- Почему класс container? Почему не index или main-page?
+    этот класс вроде как будет не только на этой странице, хотя она уникальна -->
+      <h1 class="visually-hidden">Седона</h1>
+      <p class="slogan">
+        <b>Седона-небольшой город в Аризоне, заслуживающий большего!</b>
+      </p>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <!-- В раделе фич слишком много вариантов оформления и странное смешение
+      с пунктами, которые фичами не являются. Я подумал, что каждой группе таких
+      вариантов надо дать отдельный класс и отделить фичи от рекомендаций-->
+      <section class="features">
+        <h2 class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
+        <ul class="features-list">
+          <li class="feature-picture">
+            <h3 class="feature-picture-title">Настоящий городок</h3>
+            <span class="feature-counter">- №1 -</span>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li class="advice">
+            <h3 class="advice-title">Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="advice">
+            <h3 class="advice-title">Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advice">
+            <h3 class="advice-title">Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+            </li>
+          <li class="feature-picture">
+            <h3 class="feature-picture-title">Там есть мост дъявола</h3>
+            <span class="feature-counter">- №2 -</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-item-title">Небольшая площадь</h3>
+            <span class="feature-counter">- №3 -</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-item-title">Красивая дорога</h3>
+            <span class="feature-counter">- №4 -</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-item-title">Мало туристов</h3>
+            <span class="feature-counter">- №5 -</span>
+            <p>Большинство едет в Гранд-Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="appointment">
+        <h3 class="appointment-title">Заинтересовались?</h3>
+        <!-- Вот тут appointment и appointment-title. Считается ли плохой практикой,
+        если присваивать разным элементам один и тот же класс? например, в обоих случаях
+        был бы appointment. Вроде норм, но в CSS надо будет что-то дописывать, чтобы
+        уточнять какому именно элементу класс принадлежит, чтоб не запутаться. -->
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        гостиниц в Седоне</p>
+        <!-- Здесь будет форма. С формами в следующих лекциях будем знакомиться -->
+      </section>
+    </main>
+    <footer class="main-footer">
+      <span>#VisitSedona</span>
+      <div class="footer-social">
+        <a class="social-button" href="#">Твиттер</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Ютьюб</a>
+      </div>
+      <!-- Вроде в лекции говорили, что можно разметить это списком, а потом
+      почему-то разметили с div. Таки можно списком ul? И в чем разница между
+      ними? -->
 
+      <p class="footer-copyright">
+        Websity by <!-- в демке Барбершопа это обёрнуто в <b>. Зачем это делать, ведь текст
+        не становится жирным? Мы визуально никак не выделяем это. В Барбершопе
+        чуть ли не весь текст жирным шрифтом, но <b> практически нет. В чем смысл? -->
+        <a class="button" href ="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img" widht="115" height="41" alt="Логотип HTML академии">
+        </a>
+
+        <!-- Кстати, интересно, а как принято писать комментарии? На странице
+        стиля кода Академии не нашел ничего про это. -->
+      </p>
+    </footer>
   </body>
 </html>

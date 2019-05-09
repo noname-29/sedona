@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="main-header-logo">
+          <img src="img/index-logo.svg" width="67" height="56" alt="Логотип Седона">
+        </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="gallery.html">Фото и видео</li>
+            <li><a href="map.html">Карта штата</li>
+            <li><a href="hotel.html">Гостиница</li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Гостиницы</h1>
+      <section class="filter"> <!-- не придумать название на английском кроме filter, но
+         это что-то другое вроде -->
+        <h2 class="filter-title">Инфраструктура</h2>
+        <ul class="filter-item">
+          <li class="filter-left-column">Бассейн</li>
+          <li class="filter-left-column">Парковка</li>
+          <li class="filter-left-column">Wi-Fi</li>
+        </ul>
+        <h2 class="filter-title">Тип жилья</h2>
+        <ul class="filter-item">
+          <li class="filter-center-column">Гостиница</li>
+          <li class="filter-center-column">Мотель</li>
+          <li class="filter-center-column">Апартаменты</li>
+        </ul>
+        <h2 class="filter-title">Стоимость в сутки</h2>
+        <ul class="filter-item">
+          <li class="filter-right-column">Бассейн</li>
+          <li class="filter-right-column">Парковка</li>
+          <li class="filter-right-column">Wi-Fi</li>
+        </ul>
+      </section>>
+      <!-- Вроде правая колонка должна верстаться с помощью форм, поэтому
+      я не уверен, что оно вот так должно быть. Если это вообще отдельный
+      элемент, тогда надо бы <div>, с другой стороны это вообщем-то
+      всё является фильтром-->
+
+      <section class="search-results">
+        <div class="results">
+          <h3 class="results-title">Найдено:3</h3>
+          <ul class="sorting">
+            <li class="sort-button">По цене</li>
+            <li class="sort-button">По типу</li>
+            <li class="sort-button">По рейтингу</li>
+            <!-- Тут вроде должны быть две кнопки изменения последовательности
+            сортировки, но немного запутался вот в чём. Это картинки, картинки-кнопки
+            или что вообще? Но, наверное, в любом случае пока не трогаем: это либо
+            формы либо CSS. Вроде так. -->
+          </ul>
+        </div>
+        <!-- Не знаю, верно ли использовал тут <div>. Подумал, что раз
+        у заголовка и кнопок сортировки общая "территория", то надо им
+        запилить отдельный тег и класс. Что-то кроме <div> тут можно использовать? -->
+
+        <ul class="results-list">
+          <li>
+            <img src="img/amara-resort.svg" width="135" height="90"
+            alt="Гостиница Amara Resort & Spa">
+            <h4 class="hotels-title">Amara Resort & Spa</h4>
+            <ul>
+              <li class="hotel-info">Гостиница</li>
+              <li class="hotel-info">От 4000 р.</li>
+              <li class="more-button">
+                <a href="amara-resort.html">Подробнее</a>
+              </li>
+              <li class="book-button">
+                <a href="amara-resort/book.html">Забронировать</a>
+              </li>
+              <li class="raiting-button">Рейтинг: 8,5</li>
+            </ul>
+           </li>
+           <li>
+             <img src="img/desert-quail.svg" width="135" height="90"
+             alt="Мотель Deser Quail Inn">
+             <h4 class="hotels-title">Deser Quail Inn</h4>
+             <ul>
+               <li class="hotel-info">Мотель</li>
+               <li class="hotel-info">От 3000 р.</li>
+               <li class="more-button">
+                 <a href="desert-quail.html">Подробнее</a>
+               </li>
+               <li class="book-button">
+                 <a href="desert-quail/book.html">Забронировать</a>
+               </li>
+               <li class="raiting-button">Рейтинг: 8,9</li>
+             </ul>
+            </li>
+            <li>
+              <img src="img/poco-diablo.svg" width="135" height="90"
+              alt="Апартаменты Villas At Poco Diablo">
+              <h4 class="hotels-title">Villas At Poco Diablo</h4>
+              <ul>
+                <li class="hotel-info">апартаменты</li>
+                <li class="hotel-info">От 2000 р.</li>
+                <li class="more-button">
+                  <a href="poco-diablo.html">Подробнее</a>
+                </li>
+                <li class="book-button">
+                  <a href="poco-diablo/book.html">Забронировать</a>
+                </li>
+                <li class="raiting-button">Рейтинг: 9,2</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </main>>
+      <footer class="main-footer">
+        <span>#VisitSedona</span>
+        <div class="footer-social">
+          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#">Ютьюб</a>
+        </div>
+          <p class="footer-copyright">
+          Websity by
+          <a class="button" href ="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img" widht="115" height="41" alt="Логотип HTML академии">
+          </a>
+          </p>
+      </footer>
+   </body>
+</html>
